@@ -62,7 +62,7 @@ API will written an object consisting of relevant key value pair like interest r
 * Result will be displayed on Generic Tags available below slider control.
 * The latest user input data will be visible as list item on the left sidebar.
 
-![Open Image in a new tab](https://github.com/techtutsindia/fullthrottletest/blob/master/screenshots/screen2.PNG?raw=true "Initial Screen")
+![Open Image in a new](https://github.com/techtutsindia/fullthrottletest/blob/master/screenshots/screen2.PNG?raw=true "Initial Screen")
 
 * User can also select the loan amount manually by typing the loan amount in loan amount input.
 * User needs to click on Calculate button in order to obtain result. 
