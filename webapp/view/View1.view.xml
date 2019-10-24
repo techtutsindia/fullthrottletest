@@ -1,12 +1,79 @@
-<mvc:View controllerName="com.fullthrottletest.interestratecalculator.controller.View1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
-	xmlns="sap.m">
-	<Shell id="shell">
-		<App id="app">
-			<pages>
-				<Page id="page" title="{i18n>title}">
-					<content></content>
-				</Page>
-			</pages>
-		</App>
-	</Shell>
+ 
+ 
+ <mvc:View controllerName="com.fullthrottletest.interestratecalculator.controller.View1" height="100%" xmlns:core="sap.ui.core"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:semantic="sap.m.semantic" xmlns:ui="sap.ca.ui" displayBlock="true" xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form">
+	<App id="app">
+		<pages>
+			<Page id="page" title="{i18n>title}">
+				<content>
+					<SplitContainer>
+						<masterPages>
+							<semantic:MasterPage title="{i18n>recentsearch}" floatingFooter="true">
+								<List id="list" mode="SingleSelectMaster" selectionChange="listItemSelect">
+									<items id="objectListItems"></items>
+								</List>
+								<semantic:sort>
+									<semantic:SortSelect>
+										<core:Item key="{type}" text="{type}"/>
+									</semantic:SortSelect>
+								</semantic:sort>
+								<semantic:filter>
+									<semantic:FilterAction press="onSemanticButtonPress"/>
+								</semantic:filter>
+								<semantic:group>
+									<semantic:GroupAction press="onSemanticButtonPress"/>
+								</semantic:group>
+								<semantic:addAction>
+									<semantic:AddAction press="onSemanticButtonPress"/>
+								</semantic:addAction>
+								<semantic:multiSelectAction>
+									<semantic:MultiSelectAction press="onMultiSelectPress"/>
+								</semantic:multiSelectAction>
+							</semantic:MasterPage>
+						</masterPages>
+						<detailPages>
+							<semantic:DetailPage floatingFooter="true">
+								<semantic:positiveAction>
+									<semantic:PositiveAction text="{i18n>reset}" type="Accept" press="onResetPress"/>
+								</semantic:positiveAction>
+								<VBox class="sapUiSmallMargin">
+									<f:SimpleForm id="SimpleFormDisplay480_12120Dual" editable="false" layout="ResponsiveGridLayout" title="" labelSpanXL="4" labelSpanL="4"
+										labelSpanM="12" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="0" emptySpanL="0" emptySpanM="0" emptySpanS="0" columnsXL="2"
+										columnsL="2" columnsM="2" singleContainerFullSize="false">
+										<f:content>
+											<core:Title text=""/>
+											<Label text="{i18n>enterloanamount}"/>
+											<Input id="amountInputId" liveChange="onAmountInputValueChange" value="500"/>
+											<Label text="{i18n>selectloanamount}"/>
+											<l:VerticalLayout id="verticalLayoutId" width="auto"></l:VerticalLayout>
+											<core:Title text=""/>
+											<Label text="{i18n>selectemitenure}"/>
+											<VBox>
+												<StepInput id="stepInputId" value="6" min="6" max="24" width="100%" step="1" enabled="true" description="Months" fieldWidth="70%"
+													textAlign="Center" validationMode="LiveChange" change="onStepInputValueChange"/>
+												<Button id="calculateBtnId" text="{i18n>calculate}" type="Emphasized" press="onPressCalculate"></Button>
+											</VBox>
+										</f:content>
+									</f:SimpleForm>
+								</VBox>
+								<VBox class="sapUiMediumMarginBegin sapUiLargeMarginTop">
+									<HBox>
+										<GenericTag text="{i18n>interestrate}" design="StatusIconHidden" status="Success" class="sapUiSmallMarginBottom">
+											<ObjectNumber id="genericTagInterestRateId" state="Error" emphasized="true" number="" numberUnit=""/>
+										</GenericTag>
+									</HBox>
+									<HBox >
+										<GenericTag text="{i18n>monthlyemi}" design="StatusIconHidden" status="Success" class="sapUiSmallMarginBottom">
+											<ObjectNumber id="genericTagMonthlyAmountId" state="Success" emphasized="true" number="" numberUnit=""/>
+										</GenericTag>
+									</HBox>
+								</VBox>
+							</semantic:DetailPage>
+						</detailPages>
+					</SplitContainer>
+				</content>
+			</Page>
+		</pages>
+	</App>
 </mvc:View>
