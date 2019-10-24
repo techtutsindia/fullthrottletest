@@ -3,7 +3,7 @@ Application to calculate the interest rate and monthly EMI based on the loan amo
 
 
 
-# [Live Demo of Application](https://interestratecalculator-p2000410784trial.dispatcher.hanatrial.ondemand.com/index.html?hc_reset)
+# [Live Demo of Application](https://interestratecalculator-p2000410784trial.dispatcher.hanatrial.ondemand.com/index.html)
 
 Interest Rate calculator is a tool to build using SAPUI5 framework. It takes the two parameters from user, first one is loan amount and second is EMI month tenure. Based on the values given by user, application pass the values to one API which returns an object of monthly EMI amount and interest rate. Calculation logic is written in backend.
 
