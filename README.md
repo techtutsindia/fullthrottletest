@@ -67,12 +67,12 @@ API will written an object consisting of relevant key value pair like interest r
 * User can also select the loan amount manually by typing the loan amount in loan amount input.
 * User needs to click on Calculate button in order to obtain result. 
 
-![Open Image in a new tab](https://github.com/techtutsindia/fullthrottletest/blob/master/screenshots/screen3.PNG?raw=true "Initial Screen")
+![Open Image in a new](https://github.com/techtutsindia/fullthrottletest/blob/master/screenshots/screen3.PNG?raw=true "Initial Screen")
 
 * For each search, Object list items are storing the value of user input on runtime.
 * By clicking on object list item, user can get the same results as previous.
 
-![Open Image in a new tab](https://github.com/techtutsindia/fullthrottletest/blob/master/screenshots/screen4.PNG?raw=true "Initial Screen")
+![Open Image in a new](https://github.com/techtutsindia/fullthrottletest/blob/master/screenshots/screen4.PNG?raw=true "Initial Screen")
 
 
 * To reset the default values in the application click on the Reset button available on bottom right corner.
