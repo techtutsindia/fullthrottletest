@@ -3,7 +3,7 @@ Application to calculate the interest rate and monthly EMI based on the loan amo
 
 
 
-# [Live Demo of Application](https://www.google.com)
+# [Live Demo of Application](https://interestratecalculator-p2000410784trial.dispatcher.hanatrial.ondemand.com/index.html?hc_reset)
 
 Interest Rate calculator is a tool to build using SAPUI5 framework. It takes the two parameters from user, first one is loan amount and second is EMI month tenure. Based on the values given by user, application pass the values to one API which returns an object of monthly EMI amount and interest rate. Calculation logic is written in backend.
 
@@ -16,14 +16,14 @@ Interest Rate calculator is a tool to build using SAPUI5 framework. It takes the
 
 ## Project Structure
 ```
-neo-app.json   //Entry point of the application, hold the destination path inorder to access the Odata services.
-index.html  // Bootstraping the UI5 application, process of initializing and loading of SAPUI5 library
-Component.js  // metadata configuration and enable routing module   	this.getRouter().initialize();
-manifest.json  // metadata configuration objects sap.app, sap.ui,sap.ui5 objects
-View1.view.xml  // Interface of the application, All standard UI controls
-View1.controller.js // Application logic
-i18n.properties  // all static text properties
-style.css   //global css classes
+neo-app.json           * Entry point of the application, hold the destination path inorder to access the Odata services.
+index.html             * Bootstraping the UI5 application, process of initializing and loading of SAPUI5 library
+Component.js           * metadata configuration and enable routing module   	this.getRouter().initialize();
+manifest.json          * metadata configuration objects sap.app, sap.ui,sap.ui5 objects
+View1.view.xml         * Interface of the application, All standard UI controls
+View1.controller.js    * Application logic
+i18n.properties        * all static text properties
+style.css              * global css classes
 
 ```
  
