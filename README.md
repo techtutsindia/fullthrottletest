@@ -53,7 +53,7 @@ Below mentioned screeenshot is the initial screen of the application. Here user 
 
 ## Application
 
-![Open Image in a new tab](https://github.com/techtutsindia/fullthrottlelabs/blob/master/Github%20Screenshots/screen1.PNG?raw=true "Initial Screen")
+![Open Image in a new tab](https://github.com/techtutsindia/fullthrottletest/blob/master/screenshots/screen1.PNG?raw=true "Initial Screen")
 
 
 Once user will select the loan amount using slider, livechange function will call the API and it will take two parameter from user first is the loan amount selected by user using slider control and second is the EMI tenure selected in step input tab.
@@ -62,23 +62,23 @@ API will written an object consisting of relevant key value pair like interest r
 * Result will be displayed on Generic Tags available below slider control.
 * The latest user input data will be visible as list item on the left sidebar.
 
-![Open Image in a new tab](https://github.com/techtutsindia/fullthrottlelabs/blob/master/Github%20Screenshots/screen2.PNG?raw=true "Initial Screen")
+![Open Image in a new tab](https://github.com/techtutsindia/fullthrottletest/blob/master/screenshots/screen2.PNG?raw=true "Initial Screen")
 
 * User can also select the loan amount manually by typing the loan amount in loan amount input.
 * User needs to click on Calculate button in order to obtain result. 
 
-![Open Image in a new tab](https://github.com/techtutsindia/fullthrottlelabs/blob/master/Github%20Screenshots/screen3.PNG?raw=true "Initial Screen")
+![Open Image in a new tab](https://github.com/techtutsindia/fullthrottletest/blob/master/screenshots/screen3.PNG?raw=true "Initial Screen")
 
 * For each search, Object list items are storing the value of user input on runtime.
 * By clicking on object list item, user can get the same results as previous.
 
-![Open Image in a new tab](https://github.com/techtutsindia/fullthrottlelabs/blob/master/Github%20Screenshots/screen4.PNG?raw=true "Initial Screen")
+![Open Image in a new tab](https://github.com/techtutsindia/fullthrottletest/blob/master/screenshots/screen4.PNG?raw=true "Initial Screen")
 
 
 * To reset the default values in the application click on the Reset button available on bottom right corner.
 * It will restore the default values for the inputs and will remove all the dynamically addded object list items from the DOM
 
-![Open Image in a new tab](https://github.com/techtutsindia/fullthrottlelabs/blob/master/Github%20Screenshots/screen5.PNG?raw=true "Initial Screen")
+![Open Image in a new tab](https://github.com/techtutsindia/fullthrottletest/blob/master/screenshots/screen5.PNG?raw=true "Initial Screen")
 
 
 
