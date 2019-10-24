@@ -53,7 +53,7 @@ Below mentioned screeenshot is the initial screen of the application. Here user 
 
 ## Application
 
-![Open Image in a new](https://github.com/techtutsindia/fullthrottletest/blob/master/screenshots/screen1.PNG?raw=true "Initial Screen")
+![Open Image in a new tab](https://github.com/techtutsindia/fullthrottletest/blob/master/screenshots/screen1.PNG?raw=true "Initial Screen")
 
 
 Once user will select the loan amount using slider, livechange function will call the API and it will take two parameter from user first is the loan amount selected by user using slider control and second is the EMI tenure selected in step input tab.
